@@ -15,7 +15,7 @@ class CreateAdConfiguracionesEmpresasTable extends Migration
     {
         Schema::create('ad_configuraciones_empresas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_empresa');            
+            $table->bigInteger('id_empresa')->unsigned();            
             $table->string('concepto',250);
             $table->string('valor1',250);
             $table->string('valor2',250);

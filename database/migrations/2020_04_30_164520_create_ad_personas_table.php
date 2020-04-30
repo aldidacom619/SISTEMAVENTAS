@@ -15,17 +15,17 @@ class CreateAdPersonasTable extends Migration
     {
         Schema::create('ad_personas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_empresa');          
-            $table->Integer('id_aplicacion');
-            $table->Integer('id_logs');
+            $table->bigInteger('id_empresa')->unsigned();          
+            $table->bigInteger('id_aplicacion')->unsigned();
+            $table->bigInteger('id_logs')->unsigned();
             $table->string('nombres',250);
             $table->string('apellidos',250);
             $table->string('nro_documento',50);
-            $table->Integer('tipo_documento');            
+            $table->bigInteger('tipo_documento')->unsigned();            
             $table->string('direccion',250);
             $table->string('tel_cel',50);
             $table->date('fecha_nacimiento');
-            $table->Integer('id_cargo');
+            $table->bigInteger('id_cargo')->unsigned();
             $table->dateTime('fecha_registro');
             $table->string('estado',10);
             $table->timestamps();

@@ -15,7 +15,7 @@ class CreateAdCargosTable extends Migration
     {
         Schema::create('ad_cargos', function (Blueprint $table) {
             $table->id();
-            $table->Integer('id_empresa');
+            $table->bigInteger('id_empresa')->unsigned();
             $table->string('nombre_cargo',250);
             $table->string('estado',10);
             $table->timestamps();

@@ -15,7 +15,7 @@ class CreateAdModulosTable extends Migration
     {
         Schema::create('ad_modulos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_aplicacion');
+            $table->bigInteger('id_aplicacion')->unsigned();
             $table->string('descripcion',100);
             $table->string('abreviatura',20);
             $table->string('nombre',100);

@@ -16,9 +16,9 @@ class CreateAdLogsTable extends Migration
         Schema::create('ad_logs', function (Blueprint $table) {
             $table->bigIncrements('id');            
             $table->integer('id_usuario');
-            $table->Integer('id_accion');            
+            $table->bigInteger('id_accion')->unsigned();            
             $table->dateTime('fecha');
-            $table->timestamps();
+            $table->timestamps();            
         });
     }
 

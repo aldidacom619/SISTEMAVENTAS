@@ -15,7 +15,7 @@ class CreateAdEmpresasTable extends Migration
     {
         Schema::create('ad_empresas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_aplicacion');
+            $table->bigInteger('id_aplicacion')->unsigned();
             $table->string('denominacion',100);
             $table->string('correo',100);
             $table->string('abreviatura',100);

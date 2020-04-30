@@ -11,9 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->truncatetables(['users']);
+        $this->truncatetables(['users','ad_acciones','ad_logs']);
 
-        $this->call(UsersSeeder::class);        
+        $this->call(AccionSeeder::class); 
+        $this->call(LogsSeeder::class); 
+        //$this->call(UsersSeeder::class);        
+        
     }
     protected function truncatetables(array $tables)
     {

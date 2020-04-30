@@ -15,9 +15,9 @@ class CreateAdOpcionesUsuariosTable extends Migration
     {
         Schema::create('ad_opciones_usuarios', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_usuario');            
-            $table->Integer('id_opcion');
-            $table->Integer('id_logs');            
+            $table->bigInteger('id_usuario')->unsigned();            
+            $table->bigInteger('id_opcion')->unsigned();
+            $table->bigInteger('id_logs')->unsigned();            
             $table->string('estado',10);
             $table->timestamps();
         });

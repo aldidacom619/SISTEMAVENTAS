@@ -1,4 +1,4 @@
-<?php
+->unsigned()<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,8 +15,8 @@ class CreateAdOpcionesTable extends Migration
     {
         Schema::create('ad_opciones', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('id_modulo');
-            $table->Integer('id_opcion');
+            $table->bigInteger('id_modulo')->unsigned();
+            $table->bigInteger('id_opcion')->unsigned();
             $table->string('opcion',20);
             $table->string('descripcion',250);
             $table->string('link',250);
