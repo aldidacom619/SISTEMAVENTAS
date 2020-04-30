@@ -17,7 +17,8 @@ class UsersSeeder extends Seeder
             'id_persona'=>1,
             'name'=>'ADMIN ADMIN',
             'email'=>'admin@admin',
-            'password' => bcrypt('12345678')
+            'password' => bcrypt('12345678'),
+            'id_tipousuario'=>1,
         ]);
     }
 }
