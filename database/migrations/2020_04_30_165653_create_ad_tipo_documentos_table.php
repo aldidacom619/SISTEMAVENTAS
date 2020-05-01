@@ -16,6 +16,7 @@ class CreateAdTipoDocumentosTable extends Migration
         Schema::create('ad_tipo_documentos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_documento',50);
+            $table->string('abreviatura',10);
             $table->string('estado',10);
             $table->timestamps();
         });

@@ -11,12 +11,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->truncatetables(['users','ad_acciones','ad_logs']);
+        $this->truncatetables(['ad_tipousuarios','ad_acciones','ad_logs','ad_tipo_documentos','ad_aplicaciones']);
 
         $this->call(AccionSeeder::class); 
         $this->call(LogsSeeder::class); 
-        //$this->call(UsersSeeder::class);        
+        $this->call(TipoUserSeeder::class);        
+        $this->call(TipoDocumentoSeeder::class);    
+        $this->call(AplicacionesSeeder::class);    
+
         
+
     }
     protected function truncatetables(array $tables)
     {
