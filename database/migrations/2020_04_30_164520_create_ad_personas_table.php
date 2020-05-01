@@ -19,7 +19,8 @@ class CreateAdPersonasTable extends Migration
             $table->bigInteger('id_aplicacion')->unsigned();
             $table->bigInteger('id_logs')->unsigned();
             $table->string('nombres',250);
-            $table->string('apellidos',250);
+            $table->string('primer_apellido',250);
+            $table->string('segundo_apellido',250);
             $table->string('nro_documento',50);
             $table->bigInteger('tipo_documento')->unsigned();            
             $table->string('direccion',250);
