@@ -18,5 +18,12 @@ class ModulosSeeder extends Seeder
             'nombre'=>'EMPRESAS',
             'estado'=>'AC'
         ]);
+        ad_modulos::create([            
+            'id_aplicacion' => 1,
+            'descripcion'=>'GESTION DE USUARIOS',
+            'abreviatura'=>'GDU',
+            'nombre'=>'USUARIOS',
+            'estado'=>'AC'
+        ]);
     }
 }

@@ -35,5 +35,35 @@ class OpcionesUsuariosSeeder extends Seeder
             'id_logs'=> 1,            
             'estado'=>'AC'
         ]);
+        ad_opciones_usuarios::create([            
+            'id_usuario' => 1,
+            'id_opcion'=> 5,
+            'id_logs'=> 1,            
+            'estado'=>'AC'
+        ]);
+        ad_opciones_usuarios::create([            
+            'id_usuario' => 1,
+            'id_opcion'=> 6,
+            'id_logs'=> 1,            
+            'estado'=>'AC'
+        ]);
+        ad_opciones_usuarios::create([            
+            'id_usuario' => 1,
+            'id_opcion'=> 7,
+            'id_logs'=> 1,            
+            'estado'=>'AC'
+        ]);
+        ad_opciones_usuarios::create([            
+            'id_usuario' => 1,
+            'id_opcion'=> 8,
+            'id_logs'=> 1,            
+            'estado'=>'AC'
+        ]);
+        ad_opciones_usuarios::create([            
+            'id_usuario' => 1,
+            'id_opcion'=> 9,
+            'id_logs'=> 1,            
+            'estado'=>'AC'
+        ]);
     }
 }
